@@ -126,7 +126,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+var divider = (arr) =>{
+  var evens = [];
+  var odds = [];
+  var sorted = [evens,odds];
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]%2===0){
+       evens.push(arr[i])
+    }else if(arr[i]%2!==0){
+      odds.push(arr[i])
+    }
+  }
+  return sorted;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -147,7 +159,10 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+var finder = (arr)=>{
+  let randomNum = getRandomArbitrary();
+    return arr.includes(randomNum);
+}
 
 
 ////////// PROBLEM 8 //////////
